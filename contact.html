@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Contact Us</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20240610050247">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__box">
+				<div class="header__body">
+					<a href="home.html" class="header__logo"><img src="img/logo.svg" alt="logo"></a>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item"><a href="home.html" class="menu__link">Home</a></li>
+								<li class="menu__item"><a href="about.html" class="menu__link">About Us</a></li>
+								<li class="menu__item"><a href="technology.html" class="menu__link">Technology</a></li>
+								<li class="menu__item"><a href="products.html" class="menu__link">Products</a></li>
+								<li class="menu__item"><a href="featured-content.html" class="menu__link">Featured Content</a></li>
+							</ul>
+						</nav>
+					</div>
+					<a href="#" data-da=".menu__body, 767.98" class="header__button">Contact Us</a>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+				</div>
+			</div>
+		</header>
+		<main class="page-contact">
+			<section class="page-contact__hero hero-contact">
+				<div class="hero-contact__container">
+					<h1 class="hero-contact__title">Contact Us</h1>
+					<div class="hero-contact__text">We’re standing by to help you champion flood resilience in your community. Get in touch for a free consultation today.</div>
+					<form data-goto-error data-ajax action="files/sendmail/sendmail.php" method="POST" class="hero-contact__form form-contact">
+						<div class="form-contact__body">
+							<div class="form-contact__item form-contact__item_1 item-form-contact">
+								<label for="firstName" class="item-form-contact__label">First Name</label>
+								<input autocomplete="off" type="text" id="firstName" name="form[firstName]" data-required placeholder="First Name" class="item-form-contact__input input">
+							</div>
+							<div class="form-contact__item form-contact__item_2 item-form-contact">
+								<label for="lastName" class="item-form-contact__label">Last Name</label>
+								<input autocomplete="off" type="text" id="lastName" name="form[lastName]" data-required placeholder="Last Name" class="item-form-contact__input input">
+							</div>
+							<div class="form-contact__item form-contact__item_3 item-form-contact">
+								<label for="email" class="item-form-contact__label">Email</label>
+								<input autocomplete="off" type="email" id="email" name="form[email]" data-required="email" placeholder="Email*" class="item-form-contact__input input">
+							</div>
+							<div class="form-contact__item form-contact__item_4 item-form-contact">
+								<label for="number" class="item-form-contact__label">Phone Number</label>
+								<input autocomplete="off" type="number" id="number" name="form[number]" data-required placeholder="Phone number" class="item-form-contact__input input">
+							</div>
+							<div class="form-contact__item form-contact__item_5 item-form-contact">
+								<div class="item-form-contact__label">Role</div>
+								<select name="form[role]" data-class-modif="form" class="item-form-contact__select">
+									<option value="1" selected>Which role best describes you?*</option>
+									<option value="2">Government</option>
+									<option value="3">Engineer/Consultant</option>
+									<option value="4">Real Estate Agent</option>
+									<option value="4">Property Owner</option>
+									<option value="4">Other</option>
+								</select>
+
+							</div>
+							<div class="form-contact__item form-contact__item_6 item-form-contact">
+								<div class="item-form-contact__label">Why are you getting in touch?</div>
+								<select name="form[why]" data-class-modif="form" class="item-form-contact__select">
+									<option value="1" selected>Select a purpose</option>
+									<option value="2">Learn about my flood risk</option>
+									<option value="3">Learn about flood insurance</option>
+									<option value="4">Learn about flood mitigation</option>
+									<option value="5">General inquiries</option>
+									<option value="6">Career opportunities</option>
+									<option value="7">Request for proposal</option>
+									<option value="8">Demo call</option>
+									<option value="9">Other</option>
+								</select>
+							</div>
+							<div class="form-contact__item form-contact__item_7 item-form-contact">
+								<label for="message" class="item-form-contact__label">Message</label>
+								<textarea autocomplete="off" data-autoheight data-autoheight-min="200" id="message" name="form[message]" placeholder="Enter a message..." data-error="Error" class="item-form-contact__input item-form-contact__input_txta input"></textarea>
+							</div>
+						</div>
+						<div class="form-contact__checkbox checkbox-contact">
+							<input type="checkbox" id="checkbox" name="form[checkbox]" data-required checked class="checkbox-contact__input input">
+							<label for="checkbox" class="checkbox-contact__label"><span>I agree to the <a href="#">terms</a> of use. Privacy Policy</span></label>
+						</div>
+						<button type="submit" class="form-contact__button button _icon-arrow">Submit</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__top top-footer">
+					<div class="top-footer__body">
+						<div class="top-footer__icon">
+							<img src="img/footer/logo-arkly.svg" alt="icon">
+						</div>
+						<div class="top-footer__text">
+							<p>Ready to take your flood risk into your own hands? Reach out today.</p>
+						</div>
+					</div>
+					<a href="#" class="top-footer__button">Contact us</a>
+				</div>
+				<div class="footer__main main-footer">
+					<div class="main-footer__columns">
+						<div class="main-footer__column main-footer__column_logo">
+							<a href="#" class="main-footer__logo"><img src="img/footer/logo-footer.svg" alt="logo"></a>
+							<div class="main-footer__text">Empowering Resilient Living</div>
+						</div>
+						<div class="main-footer__column main-footer__column_links">
+							<div class="main-footer__label">Quick LINKS</div>
+							<nav class="main-footer__menu menu-main-footer">
+								<ul class="menu-main-footer__list">
+									<li class="menu-main-footer__item"><a href="#" class="menu-main-footer__link">About Us</a></li>
+									<li class="menu-main-footer__item"><a href="#" class="menu-main-footer__link">Products</a></li>
+									<li class="menu-main-footer__item"><a href="#" class="menu-main-footer__link">Featured Content</a></li>
+									<li class="menu-main-footer__item"><a href="#" class="menu-main-footer__link">Technology</a></li>
+									<li class="menu-main-footer__item"><a href="#" class="menu-main-footer__link">Contact</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="main-footer__column main-footer__column_legal">
+							<div class="main-footer__label">Legal</div>
+							<nav class="main-footer__menu menu-main-footer">
+								<ul class="menu-main-footer__list">
+									<li class="menu-main-footer__item"><a href="#" class="menu-main-footer__link">Cookie Policy</a></li>
+									<li class="menu-main-footer__item"><a href="#" class="menu-main-footer__link">Privacy Policy</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="main-footer__column main-footer__column_connected">
+							<div class="main-footer__label">Stay Connected</div>
+							<div class="main-footer__social">
+								<a href="https://www.facebook.com/arkly.insurance" target="_blank" class="main-footer__social-link">
+									<img src="img/footer/icon-facebook.svg" alt="icon facebook">
+								</a>
+								<a href="https://www.linkedin.com/company/hightide-intelligence/" target="_blank" class="main-footer__social-link">
+									<img src="img/footer/icon-instagram.svg" alt="icon instagram">
+								</a>
+							</div>
+						</div>
+						<div class="main-footer__column main-footer__column_last">
+							<a href="https://www.bcorporation.net/en-us/" target="_blank">
+								<img src="img/footer/icon-certified.svg" alt="icon">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__bottom bottom-footer">
+					<div class="bottom-footer__copyright">© 2023 Astra Intelligence, Inc. All Rights Reserved.</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240610050247"></script>
+</body>
+
+</html>
